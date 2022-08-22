@@ -1,7 +1,11 @@
+import { HeaderLogo, HeaderNavigation } from '../../components';
 
 const Header = () => {
     return (
-        <div>Header</div>
+        <div className="flex items-center justify-between pt-10 px-[4%]">
+            <HeaderLogo />
+            <HeaderNavigation />
+        </div>
     )
 }
 

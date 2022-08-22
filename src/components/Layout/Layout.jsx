@@ -1,7 +1,12 @@
+import { Banner } from '../../components';
+import { ContactUs } from '../../pages';
 
 const Layout = () => {
     return (
-        <div>Layout</div>
+        <div>
+            <Banner />
+            <ContactUs />
+        </div>
     )
 }
 

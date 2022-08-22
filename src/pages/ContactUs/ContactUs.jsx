@@ -1,7 +1,7 @@
 
 const ContactUs = () => {
     return (
-        <div>ContactUs</div>
+        <div className="px-[4%]">ContactUs</div>
     )
 }
 

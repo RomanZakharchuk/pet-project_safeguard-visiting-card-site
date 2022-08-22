@@ -1,3 +1,87 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.active {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-about-us {
+    background: white;
+    border-radius: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 1.125rem;
+    color: black;
+    padding: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-about-us:active {
+    box-shadow: 0 5px rgba(0, 0, 0, 0.25);
+    transform: translateY(4px);
+}
+
+.menu-burger{
+    height:30px;
+    width:30px;
+    position:absolute;
+    right: 20px;
+    left:auto;
+    top: -20px;
+    cursor:pointer
+}
+
+.menu-burger__line{
+    height:2px;
+    display:block;
+    background-color:#fff;
+    margin-bottom:7px;
+    transition:transform .2s ease,
+    background-color .5s ease;
+    transition:All .4s ease;
+}
+
+.menu-burger__line.left{
+    width:15px;
+    margin-top:5px
+}
+
+.menu-burger__line.center {
+    width: 30px;
+}
+
+.menu-burger__line.right{
+    width:15px;
+    float:right
+}
+
+.menu-burger:hover .menu-burger__line.left,
+.menu-burger:hover .menu-burger__line.right{
+    width:25px
+}
+
+.menu-burger:hover .nav-active.menu-burger__line.left,
+.menu-burger:hover .nav-active.menu-burger__line.right {
+    width: 15px;
+}
+
+.nav-active.menu-burger__line.centre{
+    transform: translate(0px) rotate(-45deg);
+    margin-bottom: 4px;
+}
+
+.nav-active.menu-burger__line.left {
+    transform: translateX(2px) translateY(3px) rotate(45deg);
+}
+
+.nav-active.menu-burger__line.right {
+    transform: translateX(-2px) rotate(45deg);
+    margin-top: -1px;
+}

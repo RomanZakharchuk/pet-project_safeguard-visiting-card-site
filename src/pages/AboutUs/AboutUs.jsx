@@ -1,7 +1,7 @@
 
 const AboutUs = () => {
     return (
-        <div>AboutUs</div>
+        <div className="px-[4%]">AboutUs</div>
     )
 }
 
