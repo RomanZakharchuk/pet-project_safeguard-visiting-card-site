@@ -1,7 +1,7 @@
 
 const WhatWeDo = () => {
     return (
-        <div className="px-[4%]">WhatWeDo</div>
+        <div className="max-w-[1280px] min-h-[480px] mx-auto px-[4%]">WhatWeDo</div>
     )
 }
 
